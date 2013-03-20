@@ -49,7 +49,7 @@ var CloudFront = function(opts) {
 };
 
 // inherit from Amazon
-util.inherits(CloudFront, amazon.Amazon);
+util.inherits(CloudFront, amazon.AmazonSignatureV2);
 
 // --------------------------------------------------------------------------------------------------------------------
 // methods we need to implement from awssum.js/amazon.js
