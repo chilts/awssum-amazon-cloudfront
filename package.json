@@ -1,6 +1,6 @@
 {
     "name" : "awssum-amazon-cloudfront",
-    "description" : "NodeJS module to talk to Amazon CloudFront.",
+    "description" : "AwsSum plugin for Amazon CloudFront.",
     "version" : "1.0.0",
 
     "main" : "awssum-amazon-cloudfront.js",
