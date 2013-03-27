@@ -9,7 +9,7 @@
 //
 // --------------------------------------------------------------------------------------------------------------------
 
-var data2xml = require('data2xml');
+var data2xml = require('data2xml')({ attrProp : '@', valProp  : '#', });
 
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -60,7 +60,7 @@ function pathOaiIdConfig(options, args) {
 function bodyDistributionConfig(options, args) {
     // create the XML
     var data = {
-        _attr : { 'xmlns' : 'http://cloudfront.amazonaws.com/doc/2010-11-01/' },
+        '@' : { 'xmlns' : 'http://cloudfront.amazonaws.com/doc/2010-11-01/' },
     };
 
     if ( args.S3OriginDnsName ) {
@@ -136,7 +136,7 @@ function bodyDistributionConfig(options, args) {
 function bodyStreamingDistributionConfig(options, args) {
     // create the XML
     var data = {
-        _attr : { 'xmlns' : 'http://cloudfront.amazonaws.com/doc/2010-11-01/' },
+        '@' : { 'xmlns' : 'http://cloudfront.amazonaws.com/doc/2010-11-01/' },
     };
 
     if ( args.S3OriginDnsName ) {
@@ -189,7 +189,7 @@ function bodyOaiConfig(options, args) {
     var self = this;
 
     var data = {
-        _attr : { xmlns : 'http://cloudfront.amazonaws.com/doc/2010-11-01/', },
+        '@' : { xmlns : 'http://cloudfront.amazonaws.com/doc/2010-11-01/', },
         CallerReference : args.CallerReference,
     };
 
