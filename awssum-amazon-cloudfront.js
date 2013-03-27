@@ -19,7 +19,6 @@ var crypto = require('crypto');
 // dependencies
 var _ = require('underscore');
 var dateFormat = require('dateformat');
-var data2xml = require('data2xml');
 
 // our own
 var awssum = require('awssum');
